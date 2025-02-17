@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 // ✅ Proper CORS configuration
 app.use(
   cors({
-    origin: "https://cv-generator-pi-brown.vercel.app", 
+    origin: "https://cv-generator-sigma-gold.vercel.app", 
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
