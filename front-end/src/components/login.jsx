@@ -23,7 +23,7 @@ export default function Login({ setloginUser }) {
   // Handle login
   const login = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/login", user);
+      const res = await axios.post("https://cv-generator-backend.vercel.app/login", user);
       setErrorMessage("");
       setloginUser(res.data.user)
       navigate("/")// Clear error if login is successful

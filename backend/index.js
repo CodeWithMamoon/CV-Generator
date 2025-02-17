@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import mongoose from "mongoose"; // ✅ Corrected import
+import mongoose from "mongoose"; 
 
 const app = express();
 app.use(express.json());
@@ -10,7 +10,7 @@ app.use(cors());
 
 mongoose
   .connect("mongodb+srv://sap:sap@cluster0.3rgxa.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-  .then(() => console.log("✅ MongoDB Connected Successfully"))
+  .then(() => console.log("MongoDB Connected Successfully"))
   .catch((err) => console.error("❌ MongoDB Connection Error:", err));
 
 
