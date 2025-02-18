@@ -1,0 +1,19 @@
+.developer-credit {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .developer-credit span {
+    font-weight: bold;
+  }
+  
+  .developer-credit:hover {
+    color: #ffcc00; /* Hover effect */
+  }
+  

@@ -5,7 +5,7 @@ import Login from "./components/login";
 import Register from "./components/register";
 import './index.css';
 export default function App() {
-  const [user, setloginUser] = useState(null); // Initialize as null
+  const [user, setloginUser] = useState(null); 
 
   return (
     <Router>

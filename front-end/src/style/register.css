@@ -1,42 +1,77 @@
 .register-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  padding: 20px; /* Adds spacing for smaller screens */
+}
+
+.register-form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px; /* Prevents form from getting too wide */
+}
+
+.register-form h2 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 24px;
+}
+
+.register-form input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.register-form button {
+  width: 90%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.register-form button:hover {
+  background: #0056b3;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .register-container {
+    height: auto;
+    padding: 40px 20px; /* Adjust spacing */
   }
-  
+
   .register-form {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    width: 90%; /* More flexible for smaller screens */
+    max-width: 350px; /* Reduce max width */
   }
-  
+}
+
+@media (max-width: 480px) {
+  .register-form {
+    padding: 15px;
+  }
+
   .register-form h2 {
-    margin-bottom: 15px;
-    color: #333;
+    font-size: 20px;
   }
-  
-  .register-form input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
+
+  .register-form input,
   .register-form button {
-    width: 100%;
-    padding: 10px;
-    background: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
+    font-size: 14px; /* Adjust for better readability */
+    padding: 8px;
   }
-  
-  .register-form button:hover {
-    background: #007bff;
-  }
-  
+}

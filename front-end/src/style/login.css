@@ -1,42 +1,76 @@
 .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px; /* Adds spacing on smaller screens */
+}
+
+.login-form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px; /* Prevents form from stretching too wide */
+}
+
+.login-form h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.login-form input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-form button {
+  width: 90%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.login-form button:hover {
+  background: #0056b3;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .login-container {
+    height: auto;
+    padding: 40px 20px; /* More padding for small screens */
   }
-  
+
   .login-form {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    width: 90%; /* Make it more flexible on small screens */
+    max-width: 350px; /* Reduce max width */
   }
-  
+}
+
+@media (max-width: 480px) {
+  .login-form {
+    padding: 15px;
+  }
+
   .login-form h2 {
-    margin-bottom: 15px;
-    color: #333;
+    font-size: 20px;
   }
-  
-  .login-form input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
+
+  .login-form input,
   .login-form button {
-    width: 100%;
-    padding: 10px;
-    background: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
+    font-size: 14px; /* Reduce font size for small screens */
+    padding: 8px;
   }
-  
-  .login-form button:hover {
-    background: #0056b3;
-  }
-  
+}
